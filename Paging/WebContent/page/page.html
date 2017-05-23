@@ -1,0 +1,31 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link href="css/page.css" rel="stylesheet" type="text/css">
+<title>Insert title here</title>
+<script type="text/javascript" src="lib/jquery-1.10.1.min.js"></script>
+<script type="text/javascript" src="lib/page.js"></script>
+<script type="text/javascript" >
+	$(function() {
+	  $('#test').pages({
+		 	'allRecords' : '1000',
+			'perPageNum' : '10',
+			'currentPage' : '1',
+			'showPagesNum' : '11',
+			'bgColor' : '#000',
+			'currBgColor' : '#DDD',
+			'fontsize' : '15px',
+			'lineheight': '20px'
+	  });
+	  
+	  $('#test').find("#change").bind('click', function() {  
+		    alert("ok");
+	  });  
+	})
+</script>
+</head>
+<body>
+	<div id='test'></div>
+</body>
+</html>
